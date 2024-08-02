@@ -1,0 +1,38 @@
+.todo__complete-button{
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 0.25rem;       
+    position: relative; 
+}
+
+.todo__complete-button::after{
+    display: none;
+    content: "";      
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    border-radius: 0.10rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.todo.completed .todo__complete-button::after{
+    display: inline-block;   
+}
+
+.todo__text{
+    width: 100%;
+    border-radius: 0.25rem;
+    text-align: left;
+    padding: 0 0.5rem;
+    line-height: 24px;
+    margin: 0;
+}
+
+.todo.completed .todo__text{
+    text-decoration: line-through;
+}

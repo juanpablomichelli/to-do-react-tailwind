@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(155, 122, 254);
+  padding: 0;
+}
+
+#page-container{
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(155, 122, 254);
+}
+
+.section{
+  padding: 1rem 2rem;
+}
